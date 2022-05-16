@@ -6,6 +6,7 @@ import { AdminClassesComponent } from './components/admin/admin-classes/admin-cl
 import { AdminLayoutComponent } from './components/admin/admin-layout/admin-layout.component';
 import { AdminLessonsComponent } from './components/admin/admin-lessons/admin-lessons.component';
 import { AdminStudentsComponent } from './components/admin/admin-students/admin-students.component';
+import { AdminTeacherAddComponent } from './components/admin/admin-teachers/admin-teacher-add/admin-teacher-add.component';
 import { AdminTeachersComponent } from './components/admin/admin-teachers/admin-teachers.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path : 'admin', component: AdminLayoutComponent, children: [
     { path: '', component: AdminComponent},
     { path: 'teachers', component: AdminTeachersComponent},
+    { path: 'teacher/add', component: AdminTeacherAddComponent},
     { path: 'students', component: AdminStudentsComponent},
     { path: 'lessons', component: AdminLessonsComponent},
     { path: 'classes', component: AdminClassesComponent}
